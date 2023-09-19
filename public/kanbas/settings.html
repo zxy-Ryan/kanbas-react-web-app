@@ -1,0 +1,339 @@
+<table style="border-collapse: separate; border-spacing: 30px 5px">
+  <tr>
+    <td valign="top" id="col1">
+      <ul>
+        <li><a href="./profile/index.html">Account</a></li>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="./home.html">Courses</a></li>
+        <li><a href="#">Calendar</a></li>
+        <li><a href="#">Inbox</a></li>
+        <li><a href="#">History</a></li>
+        <li><a href="#">Studio</a></li>
+        <li><a href="#">Commons</a></li>
+        <li><a href="#">Help</a></li>
+      </ul>
+    </td>
+    <td valign="top" id="col2">
+      <ul>
+        <li><a href="./home.html">Home</a></li>
+        <li><a href="#">Modules</a></li>
+        <li>
+          <a href="#">Piazza</a>
+        </li>
+        <li><a href="#">Zoom Meetings</a></li>
+        <li><a href="./assignments/index.html">Assignments</a></li>
+        <li><a href="#">Quizzes</a></li>
+        <li><a href="./grades.html">Grades</a></li>
+        <li><a href="#">Panopto Video</a></li>
+        <li><a href="#">Discussions</a></li>
+        <li><a href="#">Announcements</a></li>
+        <li><a href="#">Pages</a></li>
+        <li><a href="#">Files</a></li>
+        <li><a href="#">Rubrics</a></li>
+        <li><a href="#">Outcomes</a></li>
+        <li><a href="#">Collaborations</a></li>
+        <li><a href="#">Sysllabus</a></li>
+        <li><a href="./settings.html">Settings</a></li>
+      </ul>
+    </td>
+    <td valign="top" id="col3">
+      <div>
+        <button class="tag" id="showCourseDetails">Course Details</button>
+        <button class="tag" id="showNavigation">Navigation</button>
+      </div>
+      <hr />
+      <table>
+        <tr>
+          <td id="details">
+            <h2>Course Details</h2>
+            <form action="./home.html">
+              <h3>Image:</h3>
+              <input type="file" name="myfile" id="myfile" />
+              <input type="submit" value="Upload" />
+              <h3>Name:</h3>
+              <label>CS5610 Web Development </label>
+              <h3>Course Code:</h3>
+              <label>CS5610.12631.202410</label>
+              <h3>Blueprint Course:</h3>
+              <label>No</label>
+              <h3>Course Template:</h3>
+              <input
+                type="checkbox"
+                value="TEMPLATE"
+                name="check-template"
+                id="chkbox-template"
+              />
+              <label for="chkbox-template"
+                >Enable course as a Course Template</label
+              >
+              <h3>Time Zone:</h3>
+              <select id="select-one-genre">
+                <option selected value="EST">
+                  Eastern Time (US & Canada)(-5:00/-4:00)
+                </option>
+                <option value="OTHER">other</option>
+              </select>
+              <h3>SIS ID:</h3>
+              <label>CS5610.12631.202410</label>
+              <h3>Subaccount:</h3>
+              <label>CS grad</label>
+              <label>Term: </label>
+              <label>202410_1 Fall 2023 Semester Full Term</label>
+              <label>Participation: </label>
+              <select id="select-one-genre">
+                <option selected value="TERM">Term</option>
+                <option value="OTHER">other</option>
+              </select>
+              <p>
+                Course participation is limited to term start and end dates.
+              </p>
+              <p style="font-weight: bold">Start</p>
+              <input type="date" id="due" value="2021-01-01" /><br />
+              <p style="font-weight: bold">End</p>
+              <input type="date" id="due" value="2021-01-01" /><br />
+              <input
+                type="checkbox"
+                value="ReSTRICTSTART"
+                name="check-restrict-start"
+                id="chkbox-restrict-start"
+              />
+              <label for="chkbox-restrict-start"
+                >Restrict students from viewing course before term start
+                date</label
+              >
+              <br />
+              <input
+                type="checkbox"
+                value="RESTRICTSEND"
+                name="check-restrict-end"
+                id="chkbox-restrict-end"
+              />
+              <label for="chkbox-restrict-end"
+                >Restrict students from viewing course after term start
+                end</label
+              >
+              <h3>Default due time:</h3>
+              <select id="select-one-genre">
+                <option value="1">Account default</option>
+                <option value="2">Other</option>
+              </select>
+              <p>
+                This influences the user interface for setting due dates. It
+                does not change the time due for any exsisting assignments.
+              </p>
+              <h3>Language:</h3>
+              <select id="select-one-genre">
+                <option value="1">Not set</option>
+                <option value="2">Other</option>
+              </select>
+              <p>
+                This will override any user/system language preference. This is
+                only recommended for foreign language courses.
+              </p>
+              <h3>File Storage:</h3>
+              <label>10000 megabytes</label>
+              <h3>Large Course:</h3>
+              <input
+                type="checkbox"
+                value="LARGE"
+                name="check-large"
+                id="chkbox-large"
+              />
+              <label for="chkbox-large"
+                >Launch SpeedGrader Filtered by Student Group</label
+              >
+              <h3>Grading Scheme:</h3>
+              <input
+                type="checkbox"
+                value="SCHEME"
+                name="check-scheme"
+                id="chkbox-scheme"
+              />
+              <label for="chkbox-scheme">Enable course grading scheme</label>
+              <h3>License:</h3>
+              <select id="select-one-genre">
+                <option value="1">Private (Copyrighted)</option>
+                <option value="2">Other</option>
+              </select>
+              <h3>File Copyright:</h3>
+              <input
+                type="checkbox"
+                value="COPYRIGHT"
+                name="check-copyright"
+                id="chkbox-copyright"
+              />
+              <label for="chkbox-copyright"
+                >Copyright and license information must be provided for files
+                before they are published.</label
+              >
+              <h3>Visibility:</h3>
+              <p>
+                If you need to make your course public please contact your
+                administrator/support
+              </p>
+              <select id="select-one-genre">
+                <option value="1">Course</option>
+                <option value="2">Other</option></select
+              ><br />
+              <input
+                type="checkbox"
+                value="PUBLIC"
+                name="check-public"
+                id="chkbox-public"
+              />
+              <label for="chkbox-public"
+                >Include this course in the public course index</label
+              >
+              <h3>Format:</h3>
+              <select id="select-one-genre">
+                <option value="1">On-Campus</option>
+                <option value="2">Other</option>
+              </select>
+              <h3>Mastery Paths:</h3>
+              <input
+                type="checkbox"
+                value="MASTERY"
+                name="check-mastery"
+                id="chkbox-mastery"
+              />
+              <label for="chkbox-public"
+                >Enable individuals learning paths for students based on
+                assessment</label
+              >
+              <h3>Description</h3>
+              <textarea cols="30" rows="5"></textarea><br />
+              <br />
+              <a href="#">more options</a><br />
+              <br />
+              <button type="submit">Update Course Details</button>
+            </form>
+          </td>
+          <td id="navigation" style="display: none">
+            <p>Drag and Drop items to reorder them in the course navigation</p>
+            <table border="1">
+              <tbody>
+                <tr>
+                  <td>Home&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>Modules&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>Piazza&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>Zoom Meetings&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>Assignments&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>Quizzes&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>Grades&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>People&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>Panopto Video&nbsp;</td>
+                </tr>
+              </tbody>
+            </table>
+            <br />
+            <br />
+            <p>Drag items here to hide them from students.</p>
+            <table border="1">
+              <tbody>
+                <tr style="height: 21px">
+                  <td style="height: 21px">Chat&nbsp;</td>
+                </tr>
+                <tr style="height: 21px">
+                  <td style="height: 21px">SCORM&nbsp;</td>
+                </tr>
+                <tr style="height: 21px">
+                  <td style="height: 21px">Attendance&nbsp;</td>
+                </tr>
+                <tr style="height: 21px">
+                  <td style="height: 21px">Barnes and Noble Bookstore&nbsp;</td>
+                </tr>
+                <tr style="height: 21px">
+                  <td style="height: 21px">Digication&nbsp;</td>
+                </tr>
+                <tr style="height: 21px">
+                  <td style="height: 21px">Top Hat&nbsp;</td>
+                </tr>
+                <tr style="height: 21px">
+                  <td style="height: 21px">Syllabus&nbsp;</td>
+                </tr>
+                <tr style="height: 21px">
+                  <td style="height: 21px">Perusall&nbsp;</td>
+                </tr>
+                <tr style="height: 21px">
+                  <td style="height: 21px">Panopto Video&nbsp;</td>
+                </tr>
+                <tr style="height: 21px">
+                  <td style="height: 21px">FACT Reporting and Photo Roster</td>
+                </tr>
+                <tr style="height: 21px">
+                  <td style="height: 21px">Progress Reports (Navigate)</td>
+                </tr>
+                <tr style="height: 21px">
+                  <td style="height: 21px">Microsoft Teams for Canvas</td>
+                </tr>
+                <tr style="height: 21px">
+                  <td style="height: 21px">VHL Central</td>
+                </tr>
+                <tr style="height: 21px">
+                  <td style="height: 21px">Gradescope 1.3</td>
+                </tr>
+                <tr style="height: 21px">
+                  <td style="height: 21px">Credentials</td>
+                </tr>
+                <tr style="height: 21px">
+                  <td style="height: 21px">iClicker</td>
+                </tr>
+              </tbody>
+            </table>
+            <br />
+            <br />
+            <button id="saveNavigation">Save</button>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<script>
+  document
+    .getElementById("saveNavigation")
+    .addEventListener("click", function () {
+      window.location.href = "./home.html";
+    });
+
+  document
+    .getElementById("showCourseDetails")
+    .addEventListener("click", function () {
+      var col3 = document.querySelectorAll("#details");
+      var col4 = document.querySelectorAll("#navigation");
+
+      for (var i = 0; i < col3.length; i++) {
+        col3[i].style.display = "";
+        col4[i].style.display = "none";
+      }
+    });
+
+  document
+    .getElementById("showNavigation")
+    .addEventListener("click", function () {
+      var col3 = document.querySelectorAll("#details");
+      var col4 = document.querySelectorAll("#navigation");
+
+      for (var i = 0; i < col3.length; i++) {
+        col3[i].style.display = "none";
+        col4[i].style.display = "";
+      }
+    });
+</script>
