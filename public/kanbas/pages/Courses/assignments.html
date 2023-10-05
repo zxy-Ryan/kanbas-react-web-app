@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/121c6d1e15.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="../../index.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <div class="sidebar">
+      <img src="../../images/logo.png" alt="Logo" width="60" class="logo" />
+      <a href="../Profile/index.html">
+        <i class="fas fa-user account-icon"></i> <span>Account</span>
+      </a>
+      <a href="../Dashboard/index.html">
+        <i class="fas fa-tachometer-alt"></i> <span>Dashboard</span>
+      </a>
+      <a href="./index.html" class="active">
+        <i class="fas fa-book"></i> <span>Courses</span>
+      </a>
+    </div>
+
+    <div class="content">
+      <div class="align-items-center mt-3 top-info">
+        <i class="fas fa-bars text-danger me-3"></i>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              CS5610 Web Development 2023 Fall, Section 3
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Assignments
+            </li>
+          </ol>
+        </nav>
+        <button class="btn btn-secondary ms-auto">
+          <i class="fas fa-glasses"></i> Student View
+        </button>
+      </div>
+      <hr />
+      <table
+        style="border-collapse: separate; border-spacing: 30px 5px; width: 100%"
+      >
+        <tr>
+          <td valign="top" id="col1">
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="#">Modules</a></li>
+              <li>
+                <a href="#">Piazza</a>
+              </li>
+              <li><a href="#">Zoom Meetings</a></li>
+              <li>
+                <a href="./assignments.html" class="active"
+                  >Assignments</a
+                >
+              </li>
+              <li><a href="#">Quizzes</a></li>
+              <li><a href="./grades.html">Grades</a></li>
+              <li><a href="#">Panopto Video</a></li>
+              <li><a href="#">Discussions</a></li>
+              <li><a href="#">Announcements</a></li>
+              <li><a href="#">Pages</a></li>
+              <li><a href="#">Files</a></li>
+              <li><a href="#">Rubrics</a></li>
+              <li><a href="#">Outcomes</a></li>
+              <li><a href="#">Collaborations</a></li>
+              <li><a href="#">Sysllabus</a></li>
+              <li><a href="./settings.html">Settings</a></li>
+            </ul>
+          </td>
+
+          <td valign="top" id="col2">
+            <div class="d-flex justify-content-between">
+              <input type="text" class="form-control w-25" placeholder="Search for Assignment">
+              
+              <div class="d-flex">
+                  <button type="button" class="btn btn-secondary me-1">
+                      <i class="fa-solid fa-plus"></i>
+                      Group
+                  </button>
+          
+                  <button type="button" class="btn btn-danger me-1">
+                      <i class="fa-solid fa-plus"></i>Assignment
+                  </button>
+                  
+                  <button type="button" class="btn btn-secondary">
+                      <i class="fas fa-ellipsis-v"></i>
+                  </button>
+              </div>
+          </div>
+          
+
+            <ul class="list-group">
+              <li
+                class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center mt-3 module-title"
+              >
+                <strong
+                  ><i class="fas fa-ellipsis-v me-2"></i>Assignments</strong
+                >
+                <span>
+                  <span class="rounded px-2 py-1" style="border: 1px solid #000"
+                    >40% of Total</span
+                  >
+                  <i class="fas fa-plus ms-2"></i>
+                  <i class="fas fa-ellipsis-v ms-2"></i>
+                </span>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                <div class="d-flex align-items-center position-relative">
+                  <i
+                    class="fas fa-ellipsis-v position-absolute me-2"
+                    style="top: 50%; transform: translateY(-50%)"
+                  ></i>
+                  <i
+                    class="fa-regular fa-pen-to-square position-absolute me-2"
+                    style="
+                      top: 50%;
+                      transform: translateY(-50%);
+                      left: 1rem;
+                      color: green;
+                    "
+                  ></i>
+                  <div class="content ms-5">
+                    <strong
+                      ><a
+                        href="./edit.html"
+                        class="text-decoration-none text-dark"
+                        >A1 SETUP</a
+                      ></strong
+                    >
+                    <p class="text-muted fs-6 mb-0">
+                      week0 | Due Sep 18 | 100pt
+                    </p>
+                  </div>
+                </div>
+
+                <span>
+                  <i class="fas fa-check-circle checkmark"></i>
+                  <i class="fas fa-ellipsis-v ms-2"></i>
+                </span>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                <div class="d-flex align-items-center position-relative">
+                  <i
+                    class="fas fa-ellipsis-v position-absolute me-2"
+                    style="top: 50%; transform: translateY(-50%)"
+                  ></i>
+                  <i
+                    class="fa-regular fa-pen-to-square position-absolute me-2"
+                    style="
+                      top: 50%;
+                      transform: translateY(-50%);
+                      left: 1rem;
+                      color: green;
+                    "
+                  ></i>
+                  <div class="content ms-5">
+                    <strong
+                      ><a
+                        href="./edit.html"
+                        class="text-decoration-none text-dark"
+                        >A2 HTML</a
+                      ></strong
+                    >
+                    <p class="text-muted fs-6 mb-0">
+                      week1 | Due Sep 25 | 100pt
+                    </p>
+                  </div>
+                </div>
+
+                <span>
+                  <i class="fas fa-check-circle checkmark"></i>
+                  <i class="fas fa-ellipsis-v ms-2"></i>
+                </span>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                <div class="d-flex align-items-center position-relative">
+                  <i
+                    class="fas fa-ellipsis-v position-absolute me-2"
+                    style="top: 50%; transform: translateY(-50%)"
+                  ></i>
+                  <i
+                    class="fa-regular fa-pen-to-square position-absolute me-2"
+                    style="
+                      top: 50%;
+                      transform: translateY(-50%);
+                      left: 1rem;
+                      color: green;
+                    "
+                  ></i>
+                  <div class="content ms-5">
+                    <strong
+                      ><a
+                        href="./edit.html"
+                        class="text-decoration-none text-dark"
+                        >A3 CSS</a
+                      ></strong
+                    >
+                    <p class="text-muted fs-6 mb-0">
+                      week2 | Due Oct 2 | 100pt
+                    </p>
+                  </div>
+                </div>
+
+                <span>
+                  <i class="fas fa-check-circle checkmark"></i>
+                  <i class="fas fa-ellipsis-v ms-2"></i>
+                </span>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                <div class="d-flex align-items-center position-relative">
+                  <i
+                    class="fas fa-ellipsis-v position-absolute me-2"
+                    style="top: 50%; transform: translateY(-50%)"
+                  ></i>
+                  <i
+                    class="fa-regular fa-pen-to-square position-absolute me-2"
+                    style="
+                      top: 50%;
+                      transform: translateY(-50%);
+                      left: 1rem;
+                      color: green;
+                    "
+                  ></i>
+                  <div class="content ms-5">
+                    <strong
+                      ><a
+                        href="./edit.html"
+                        class="text-decoration-none text-dark"
+                        >A4 BOOTSTRAP</a
+                      ></strong
+                    >
+                    <p class="text-muted fs-6 mb-0">
+                      week3 | Due Oct 10 | 100pt
+                    </p>
+                  </div>
+                </div>
+
+                <span>
+                  <i class="fas fa-check-circle checkmark"></i>
+                  <i class="fas fa-ellipsis-v ms-2"></i>
+                </span>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                <div class="d-flex align-items-center position-relative">
+                  <i
+                    class="fas fa-ellipsis-v position-absolute me-2"
+                    style="top: 50%; transform: translateY(-50%)"
+                  ></i>
+                  <i
+                    class="fa-regular fa-pen-to-square position-absolute me-2"
+                    style="
+                      top: 50%;
+                      transform: translateY(-50%);
+                      left: 1rem;
+                      color: green;
+                    "
+                  ></i>
+                  <div class="content ms-5">
+                    <strong
+                      ><a
+                        href="./edit.html"
+                        class="text-decoration-none text-dark"
+                        >A5 JAVASCRIPT</a
+                      ></strong
+                    >
+                    <p class="text-muted fs-6 mb-0">
+                      week4 | Due Oct 17 | 100pt
+                    </p>
+                  </div>
+                </div>
+
+                <span>
+                  <i class="fas fa-check-circle checkmark"></i>
+                  <i class="fas fa-ellipsis-v ms-2"></i>
+                </span>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                <div class="d-flex align-items-center position-relative">
+                  <i
+                    class="fas fa-ellipsis-v position-absolute me-2"
+                    style="top: 50%; transform: translateY(-50%)"
+                  ></i>
+                  <i
+                    class="fa-regular fa-pen-to-square position-absolute me-2"
+                    style="
+                      top: 50%;
+                      transform: translateY(-50%);
+                      left: 1rem;
+                      color: green;
+                    "
+                  ></i>
+                  <div class="content ms-5">
+                    <strong
+                      ><a
+                        href="./edit.html"
+                        class="text-decoration-none text-dark"
+                        >A6 REACT</a
+                      ></strong
+                    >
+                    <p class="text-muted fs-6 mb-0">
+                      week5 | Due Oct 24 | 100pt
+                    </p>
+                  </div>
+                </div>
+
+                <span>
+                  <i class="fas fa-check-circle checkmark"></i>
+                  <i class="fas fa-ellipsis-v ms-2"></i>
+                </span>
+              </li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
