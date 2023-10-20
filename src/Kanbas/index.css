@@ -1,0 +1,328 @@
+.sidebar {
+  background-color: black;
+  width: 80px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.sidebar a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+.sidebar a.active {
+  background-color: white;
+  color: red;
+}
+.sidebar i {
+  color: red;
+  margin: 5px 10px;
+}
+.sidebar .account-icon {
+  color: gray;
+}
+.logo {
+  margin: 5px 10px;
+}
+.sidebar a span {
+  margin: 5px 10px;
+}
+
+.content {
+  margin-left: 100px;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 100px;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+#col1 {
+  width: 195px;
+}
+
+#col1 ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#col1 a {
+  color: red;
+  text-decoration: none;
+  display: block;
+  margin: 15px 0;
+  padding-left: 10px;
+  border-left: 3px solid transparent;
+}
+
+#col1 a.active {
+  color: black;
+  border-left: 3px solid black;
+}
+
+.account-icon-large {
+  font-size: 50px;
+  color: gray;
+  display: block;
+  margin: 10px auto;
+}
+
+.account-name {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#col2 a {
+  color: red;
+  text-decoration: none;
+  display: inline;
+}
+
+.settings-link:hover {
+  text-decoration: underline;
+}
+
+.dashboard-content {
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    max-width: 1160px; 
+}
+
+.course-card {
+  width: 260px;
+  margin: 15px 15px;
+}
+
+.solid-color {
+  background-color: #1a5fc1;
+  height: 150px;
+}
+
+.course-link {
+  text-decoration: none;
+}
+
+@media (min-width: 1200px) {
+  .content {
+      justify-content: flex-start; 
+  }
+}
+
+@media (max-width: 1199px) and (min-width: 900px) {
+  .content {
+      justify-content: space-around; 
+  }
+}
+
+@media (max-width: 899px) {
+  .content {
+      justify-content: center; 
+  }
+}
+
+.breadcrumb a {
+  color: red;
+  text-decoration: none;
+}
+
+.breadcrumb-item {
+  color: red;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: ">";
+}
+
+.breadcrumb {
+  margin-bottom: 0;
+}
+
+.top-info {
+  display: flex;
+}
+
+#col3 {
+  top: 0;
+  right: 0;
+  width: 20%;
+}
+
+#col3 a {
+  color: red;
+  text-decoration: none;
+  display: inline;
+}
+
+.top-banner {
+  display: none;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+}
+
+@media (max-width: 1200px) {
+  #col3 {
+      display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .sidebar, #col1 {
+      display: none;
+  }
+  .top-banner {
+      display: flex;
+  }
+  .content {
+    margin-left: 0;
+}
+  .top-info {
+    display: none;
+  }
+}
+
+.top-banner {
+  overflow: hidden; 
+  position: relative; 
+}
+
+.top-banner .sandwich-icon {
+  float: left;
+}
+
+.top-banner .arrow-icon {
+  float: right;
+}
+
+.top-banner .course-name {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  background-color: rgba(255, 255, 255); 
+  z-index: 1000; 
+  overflow: auto; 
+}
+
+.overlay-content {
+  width: 100%; 
+  padding: 20px;
+  background-color: #fff;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#navOverlay a {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  color: black;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+#navOverlay a.active {
+  color: red;
+}
+#navOverlay i {
+  color: red;
+  margin: 5px 10px;
+}
+
+#col1Overlay ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#col1Overlay a {
+  color: red;
+  text-decoration: none;
+  display: block;
+  margin: 15px 0;
+  padding-left: 10px;
+  border-left: 3px solid transparent;
+}
+
+#col1Overlay a.active {
+  color: black;
+  border-left: 3px solid black;
+}
+
+.checkmark {
+  color: green;
+}
+
+.list-group-item {
+  border-left: 4px solid green;
+}
+
+.module-title {
+  border-left: none;
+}
+
+#assignment-col1 {
+  width: 25%; 
+}
+
+#assignment-col2 {
+  width: 75%; 
+}
+
+.tab-container {
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.tab-btn {
+  padding: 10px 15px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: red;
+  transition: border-bottom 0.3s, border-top 0.3s;
+}
+
+.tab-btn.active {
+  color: black;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.navigation-table td {
+  position: relative;
+}
+
+.navigation-table td .fas {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
