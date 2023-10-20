@@ -14,12 +14,11 @@ function Dashboard() {
             <div className="card h-100 course-card">
               <img src="/images/react.png" class="card-img-top" alt="..." />
               <div className="card-body">
-                <h5 className="card-title">{course.name}</h5>
 
                 <Link
                   key={course._id}
                   to={`/Kanbas/Courses/${course._id}`}
-                  className="btn btn-primary"
+                  className="card-title text-danger"
                 >
                   {course.name}
                 </Link>
