@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useParams, Routes, Route, Navigate, useLocation } from "react-router-dom";
 // import JsonPre from "../../Labs/a3/JsonPre";
 import db from "../Database";
@@ -9,12 +9,24 @@ import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/AssignmentEditor";
 import Grades from "./Grades";
 import './index.css';
+import axios from "axios";
 
 function Courses({ courses }) {
   const { courseId } = useParams();
+  const URL = "http://localhost:4000/api/courses";
   const {pathname} = useLocation();
   const [empty, kanbas, Courses, id, screen] = pathname.split("/");
-  const course = courses.find((course) => course._id === courseId);
+  const [course, setCourse] = useState({});
+  const findCourseById = async (courseId) => {
+    const response = await axios.get(
+      `${URL}/${courseId}`
+    );
+    setCourse(response.data);
+  };
+  useEffect(() => {
+    findCourseById(courseId);
+  }, [courseId]);
+
   return (
     <div>
       <div class="d-flex align-items-center mt-3 top-info">
