@@ -9,7 +9,8 @@ function WorkingWithArrays() {
     completed: false,
   });
 
-  const API = "http://localhost:4000/a5/todos";
+  const APP_ROOT = process.env.REACT_APP_ROOT;
+  const API = `${APP_ROOT}/a5/todos`;
   const [todos, setTodos] = useState([]);
   const fetchTodos = async () => {
     const response = await axios.get(API);

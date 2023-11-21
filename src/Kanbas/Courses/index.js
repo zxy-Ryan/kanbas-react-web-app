@@ -12,8 +12,9 @@ import './index.css';
 import axios from "axios";
 
 function Courses({ courses }) {
+  const API_BASE = process.env.REACT_APP_API_BASE;
   const { courseId } = useParams();
-  const URL = "http://localhost:4000/api/courses";
+  const URL = `${API_BASE}/courses`;
   const {pathname} = useLocation();
   const [empty, kanbas, Courses, id, screen] = pathname.split("/");
   const [course, setCourse] = useState({});
